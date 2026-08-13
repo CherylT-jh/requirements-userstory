@@ -1,1 +1,117 @@
+Raw Stakeholder Notes – Product Discovery (Trade Finance Onboarding Platform)
+Attendees: Sales, Operations, Trade Ops, Compliance, Product, IT
+
+Current onboarding takes anywhere from 2 days to 3 weeks depending on customer. Nobody agrees on the actual average. Need data.
+Ops keep chasing customers for missing docs over email. Some use WhatsApp (not ideal).
+Existing onboarding is "digital" but actually PDFs + email attachments.
+Customer shouldn't need to understand trade finance terminology before onboarding.
+Need support for Import LC, Export LC, Bank Guarantee... maybe Collections? (Confirm scope)
+One customer uploads incorporation cert 4-5 times because different departments ask separately.
+Can we reuse KYC documents from previous onboarding?
+Compliance says document validity periods differ by country.
+We should not hardcode country rules.
+Need configurable workflows.
+Customer may have multiple legal entities.
+Parent company onboarding vs subsidiary? Different?
+Existing CRM already stores customer profile. Don't duplicate.
+Need API? Maybe not Day 1.
+Someone mentioned Salesforce integration.
+Need SSO for internal staff.
+Customers login with...? Email OTP? Corporate SSO? Unsure.
+Passwordless would be nice.
+Legal asked about digital signatures.
+Are DocuSign and Adobe Sign both supported?
+Maybe simple acknowledgment is enough for MVP?
+Need audit trail for everything.
+Every upload, every approval.
+Compliance wants immutable logs.
+Operations just wants less manual work.
+Customer shouldn't see internal approval comments.
+Internal notes only.
+Different document requirements by:
+customer type
+country
+trade product
+risk rating
+industry?
+Don't over-engineer MVP.
+Customer progress tracker would reduce support calls.
+Need notifications.
+Email first.
+SMS maybe later.
+Push notifications? Probably not.
+Reminder frequency configurable.
+Don't spam customers.
+Some customers ignore emails.
+Dashboard for internal users:
+pending reviews
+overdue applications
+bottlenecks
+Can managers see SLA metrics?
+Need reporting.
+Export to Excel because everyone asks.
+Existing reports are manually built every Friday.
+Need document version history.
+Customer uploads wrong file quite often.
+Max upload size? Someone said 50MB. IT said maybe 100MB.
+OCR?
+Nice-to-have.
+AI document extraction?
+Compliance nervous about AI making decisions.
+AI suggestions okay if human approves.
+Need multilingual eventually.
+English only MVP.
+Mobile responsive.
+Native app not required.
+Some customers complete onboarding on tablets.
+Accessibility requirements? Check corporate standards.
+Browser support? Still need Edge because corporate clients.
+Customer can save and continue later.
+Auto-save every few minutes.
+Session timeout should follow security policy.
+Need consent before collecting data.
+Privacy notice should vary by jurisdiction?
+Data retention policy still being defined.
+Customer may abandon halfway.
+Can RM resume on behalf of customer?
+Need delegated access.
+Multiple users from same company should collaborate.
+Finance person uploads docs, legal person signs, director approves.
+Approval hierarchy?
+Don't assume one user per company.
+Existing process has around 40 manual checks.
+Can we automate some?
+Risk scoring maybe from existing system.
+Need exception handling.
+Manual override must be logged.
+No "black box" automation.
+Biggest pain today = missing documents + repeated customer follow-up.
+Second biggest pain = status visibility.
+Third = duplicate data entry.
+Success metrics?
+reduce onboarding time
+fewer customer emails
+increase first-time complete submissions
+reduce operations effort
+Need analytics.
+Funnel drop-off would be useful.
+Which onboarding step has highest abandonment?
+Product asked if we should support non-trade products later.
+Keep architecture extensible.
+Don't make every screen trade-finance-specific.
+Branding should be customizable for white-label partners? (Park this.)
+Timeline aggressive:
+Discovery this month
+MVP in ~6 months (ambitious)
+Budget not finalized.
+Security review mandatory before production.
+Open questions:
+Who owns document templates?
+Who updates country rules?
+Which system is source of truth for customer data?
+How do we handle rejected applications?
+Can customers edit after submission?
+What happens if compliance requests additional documents after approval starts?
+Should onboarding support existing customers applying for new trade products?
+Is re-onboarding different from first-time onboarding?
 
