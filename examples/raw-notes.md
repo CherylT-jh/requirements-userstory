@@ -26,14 +26,6 @@ Attendees: Sales, Operations, Trade Ops, Compliance, Product, IT
 - Compliance wants immutable logs.
 - Operations just wants less manual work.
 - Customer shouldn't see internal approval comments.
-
-Different document requirements by:
-- customer type
-- country
-- trade product
-- risk rating
-- industry?
-
 - Don't over-engineer MVP.
 - Customer progress tracker would reduce support calls.
 - Need notifications.
@@ -43,11 +35,6 @@ Different document requirements by:
 - Reminder frequency configurable.
 - Don't spam customers.
 - Some customers ignore emails.
-
-Dashboard for internal users:
-- pending reviews
-- overdue applications
-
 - Can managers see SLA metrics?
 - Need reporting.
 - Export to Excel because everyone asks.
@@ -99,6 +86,17 @@ Dashboard for internal users:
 - MVP in ~6 months (ambitious)
 - Budget not finalized.
 - Security review mandatory before production.
+
+Dashboard for internal users:
+- pending reviews
+- overdue applications
+  
+Different document requirements by:
+- customer type
+- country
+- trade product
+- risk rating
+- industry?
   
 Open questions:
 - Who owns document templates?
@@ -109,4 +107,3 @@ Open questions:
 - What happens if compliance requests additional documents after approval starts?
 - Should onboarding support existing customers applying for new trade products?
 - Is re-onboarding different from first-time onboarding?
-
